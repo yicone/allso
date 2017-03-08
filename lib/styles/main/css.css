@@ -29,6 +29,9 @@ div.modal-body div.checkbox {
     text-align: right;
 }
 
+a.navbar-brand > img {
+    height: 100%
+}
 
 /* 两个窗口 */
 #a, #b {
@@ -36,5 +39,5 @@ div.modal-body div.checkbox {
     border:0; padding:0;
 	position:absolute; top:0; left:0;
 }
-#a {z-index:2;}
+#a {z-index:2;border-right: 1px dashed #333;}
 #b {z-index:1;}

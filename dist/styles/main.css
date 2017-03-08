@@ -43,6 +43,9 @@ div.progress {
 div.modal-body div.checkbox {
   text-align: right;
 }
+a.navbar-brand > img {
+  height: 100%;
+}
 /* 两个窗口 */
 #a,
 #b {
@@ -55,6 +58,7 @@ div.modal-body div.checkbox {
 }
 #a {
   z-index: 2;
+  border-right: 1px dashed #333;
 }
 #b {
   z-index: 1;
