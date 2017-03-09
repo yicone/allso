@@ -18,7 +18,7 @@ div.loading{
 
 /*顶栏*/
 div.container-fluid {width:100%}
-#soinput {width:500px}
+.soinput {width:400px!important}
 /*进度条*/
 div.progress {margin-top: 15px; cursor:pointer }
 #jdt1 {width: 50%}
