@@ -27,7 +27,7 @@
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="row">
-        <div class="search-panel col-md-5 col-sm-5">
+        <div class="search-panel col-xs-5">
           <div class="search-box">
             <form class="navbar-form" role="search" onsubmit="return false;">
               <div class="form-group">
@@ -37,7 +37,7 @@
             </form>
           </div>
           <div class="engine-brand">
-              <img src="">
+            <img src="">
           </div>
           <div class="engine-selector">
             <ul class="nav navbar-nav">
@@ -51,12 +51,20 @@
           </div>
         </div>
 
-        <div class="progress col-md-2 col-sm-2">
-          <div id='jdt1' class="progress-bar progress-bar-info" onclick="change_state(true)">☀</div>
-          <div id='jdt2' class="progress-bar progress-bar-success" onclick="change_state(false)">❉</div>
+        <div class="col-xs-2">
+          <div class="progress">
+            <div id='jdt1' class="progress-bar progress-bar-info" onclick="change_state(true)">☀</div>
+            <div id='jdt2' class="progress-bar progress-bar-success" onclick="change_state(false)">❉</div>
+          </div>
+          <div class="sync-mode btn-group btn-group-xs btn-group-justified" role="group" aria-label="...">
+            <a href="#" role="button" class="btn btn-default btn-danger"><span class="glyphicon glyphicon-retweet" aria-hidden="true"></span></a>
+            <a href="#" role="button" class="btn btn-default">中</a>
+            <a href="#" role="button" class="btn btn-default">en</a>
+          </div>
+
         </div>
 
-        <div class="search-panel col-md-5 col-sm-5">
+        <div class="search-panel col-xs-5">
           <div class="search-box">
             <form class="navbar-form" onsubmit="return false;">
               <div class="form-group">
@@ -66,7 +74,7 @@
             </form>
           </div>
           <div class="engine-brand">
-              <img src="">
+            <img src="">
           </div>
           <div class="engine-selector">
             <ul class="nav navbar-nav">
