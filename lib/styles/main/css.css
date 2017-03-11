@@ -1,4 +1,4 @@
-body {overflow:hidden}
+/*body {overflow:hidden}*/
 
 /*loading遮盖层*/
 div.loading{
@@ -16,11 +16,25 @@ div.loading{
     background: url('loading.gif') 50% 50% no-repeat;
 }
 
-/*顶栏*/
-div.container-fluid {width:100%}
-.soinput {width:400px!important}
+.search-panel {display:table }
+
+.search-box { display:table-cell;width:90%;vertical-align:top; }
+.navbar-form>.form-group{ display: block}
+.navbar-form .form-control>{ width: 100%}
+
+.engine-brand {
+    display:table-cell;vertical-align:middle;
+}
+.engine-brand > img {
+    height: 20px
+}
+
+.engine-selector {
+    display:table-cell;vertical-align:top;
+}
+
 /*进度条*/
-div.progress {margin-top: 15px; cursor:pointer }
+div.progress {margin-top: 10px; cursor:pointer }
 #jdt1 {width: 50%}
 #jdt2 {width: 50%}
 
@@ -29,9 +43,6 @@ div.modal-body div.checkbox {
     text-align: right;
 }
 
-a.navbar-brand > img {
-    height: 100%
-}
 
 /* 两个窗口 */
 #a, #b {
