@@ -18,7 +18,7 @@ div.loading{
 
 .search-panel {display:table }
 
-.search-box { display:table-cell;width:90%;vertical-align:top; }
+.search-box { display:table-cell;width:90%;vertical-align:top;padding-right: 5px; }
 .navbar-form>.form-group{ display: block}
 .navbar-form .form-control>{ width: 100%}
 
@@ -34,7 +34,7 @@ div.loading{
 }
 
 /*进度条*/
-div.progress {margin-top: 10px; cursor:pointer }
+div.progress {margin-top: 10px; cursor:pointer; margin-bottom: 10px; }
 #jdt1 {width: 50%}
 #jdt2 {width: 50%}
 

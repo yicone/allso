@@ -26,6 +26,7 @@ div.loading {
   display: table-cell;
   width: 90%;
   vertical-align: top;
+  padding-right: 5px;
 }
 .navbar-form > .form-group {
   display: block;
@@ -48,6 +49,7 @@ div.loading {
 div.progress {
   margin-top: 10px;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 #jdt1 {
   width: 50%;
