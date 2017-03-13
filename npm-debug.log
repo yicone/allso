@@ -24,7 +24,7 @@
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
 15 verbose pkgid allso@0.0.0
 16 verbose cwd /Users/yicone/Workspace/yicone/allso
-17 error Darwin 15.6.0
+17 error Darwin 16.0.0
 18 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "run" "start"
 19 error node v7.4.0
 20 error npm  v4.0.5
