@@ -24,7 +24,8 @@
 - Instapaper
 - Evernote [^2]
 
-[^1]: 需翻墙
+**注意**:  
+[^1]: 需翻墙  
 [^2]: 需安装 Chrome 插件: [Ignore X-Frame headers](https://chrome.google.com/webstore/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe))
 
 
