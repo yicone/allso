@@ -27,8 +27,3 @@
 **注意**:  
 [^1]: 需翻 GFW  
 [^2]: 需安装 Chrome 插件: [Ignore X-Frame headers](https://chrome.google.com/webstore/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe)
-
-
-## 正在开发的功能
-- 添加 Wunderlist
-- 提供 Chrome 插件的访问形式
