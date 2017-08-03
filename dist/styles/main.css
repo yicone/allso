@@ -1,4 +1,8 @@
 /*body {overflow:hidden}*/
+.navbar-inverse {
+  background-color: #F6F6F6;
+  border-color: #B5B4B6;
+}
 /*loading遮盖层*/
 div.loading {
   position: fixed;
@@ -49,13 +53,17 @@ div.loading {
 div.progress {
   margin-top: 10px;
   cursor: pointer;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 #jdt1 {
   width: 50%;
 }
 #jdt2 {
   width: 50%;
+}
+div.sync-mode {
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 /*设置界面*/
 div.modal-body div.checkbox {
