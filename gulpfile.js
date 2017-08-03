@@ -89,5 +89,16 @@ gulp.task("html", ["styles", "js"], function() {
 
 // 用带版本号的资源路径替换不带版本号的资源路径
 gulp.task("reveasy", ["html"], function() {
-  return gulp.src("index.html").pipe($.revEasy({})).pipe(gulp.dest("."));
+  return gulp
+    .src("index.html")
+    .pipe(
+      $.revEasy({
+        patterns: {
+          js: {
+            regex: /(<script[^>]*?\s+src=)("dist(?:.+?)"|'(?:.+?)')([^>]*?>)/gi
+          }
+        }
+      })
+    )
+    .pipe(gulp.dest("."));
 });
