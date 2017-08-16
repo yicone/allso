@@ -1,17 +1,18 @@
 {
-  "name": "allso",
-  "description": "allso",
+  "name": "warmhole",
+  "description": "warmhole search tool",
   "version": "0.0.0",
   "private": true,
-  "author": "Moshel",
+  "author": "yicone",
   "license": "AGPL-3.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/h2y/allso.git"
+    "url": "git://github.com/yicone/warmhole.git"
   },
   "scripts": {
+    "start": "http-server -p 8080",
     "build": "gulp",
-    "start": "gulp watch"
+    "watch": "gulp watch"
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.14.0",
