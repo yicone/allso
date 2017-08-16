@@ -57,3 +57,34 @@ div.modal-body div.checkbox {
 }
 #a {z-index:2;border-right: 1px dashed #333;}
 #b {z-index:1;}
+
+/*
+ * .electron-in-page-search-window is a class specified to default
+ * <webview> element for search window.
+ */
+.electron-in-page-search-window {
+  position: fixed;
+  top: 0;
+  right: 0;
+  border: solid grey 1px;
+  background-color: white;
+  width: 300px;
+  height: 36px;
+  z-index: 9999;
+}
+
+/*
+ * .search-inactive is added to search window <webview> when the window
+ * is inactive.
+ */
+.search-inactive {
+  visibility: hidden;
+}
+
+/*
+ * .search-inactive is added to search window <webview> when the window
+ * is active.
+ */
+.search-active {
+  visibility: visible;
+}
