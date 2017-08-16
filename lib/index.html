@@ -93,34 +93,43 @@
   </nav>
 
   <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">提示</h4>
-      </div>
-      <div class="modal-body">
-        <p>
-          搜索 Google、微博、Evernote时，需要安装 Chrome 插件:
-          <a href="https://chrome.google.com/webstore/detail/gleekbfjekiniecknbkamfmkohkpodhe">X-Frame-Options</a>
-        </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">尚未安装</button>
-        <button type="button" class="btn btn-primary">已安装</button>
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">提示</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+            搜索 Google、微博、Evernote时，需要安装 Chrome 插件:
+            <a href="https://chrome.google.com/webstore/detail/gleekbfjekiniecknbkamfmkohkpodhe">X-Frame-Options</a>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">尚未安装</button>
+          <button type="button" class="btn btn-primary">已安装</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
   <!--http://gohom.win/2016/02/11/stop-redirect-iframe/-->
   <!-- https://github.com/jiahaog/nativefier/issues/412 -->
-  <iframe id='a' name="left-disable-x-frame-options" sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-pointer-lock" class="search_window"></iframe>
-  <iframe id='b' name="right-disable-x-frame-options" sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-pointer-lock" class="search_window"></iframe>
+  <iframe id='a' name="left-disable-x-frame-options" sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-pointer-lock"
+    class="search_window"></iframe>
+  <iframe id='b' name="right-disable-x-frame-options" sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-pointer-lock"
+    class="search_window"></iframe>
 
 </body>
+<script>
+  // 重命名 Electron 提供的 require, 否则 jQuery 无法使用
+  window.nodeRequire = require;
+  delete window.require;
+  delete window.exports;
+  delete window.module;
 
+</script>
 <script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
