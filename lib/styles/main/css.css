@@ -33,6 +33,17 @@ div.loading{
     height: 20px
 }
 
+.dropdown > ul {
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 400px;
+}
+
+.dropdown-menu .divider {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
 .engine-selector {
     display:table-cell;vertical-align:top;
 }
